@@ -25,8 +25,7 @@ server.listen(8080, () => {
   console.log("Server running!");
 });
 
-const MONGO_URL =
-  "mongodb+srv://vinicius:RTx7nhXJ8cHDqltA@cluster0.dw3v2jm.mongodb.net/?retryWrites=true&w=majority";
+const MONGO_URL = "";
 
 mongoose.Promise = Promise;
 mongoose.connect(MONGO_URL);
