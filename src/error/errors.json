@@ -1,0 +1,10 @@
+{
+  "unauthenticated": "User not autheticated, please login-in.",
+  "notOwner": "User is not the owner of the account.",
+  "missingEmail": "Missing e-mail info.",
+  "missingPassword": "Missing password info.",
+  "notRegistered": "E-mail not registered.",
+  "wrongPassword": "Incorrect Password.",
+  "missingInfo": "Missing information.",
+  "alreadyRegistered": "E-mail already in use"
+}
