@@ -6,6 +6,9 @@ import compression from "compression";
 import cors from "cors";
 import mongoose from "mongoose";
 import router from "./router";
+import * as dotenv from "dotenv";
+
+dotenv.config();
 
 const app = express();
 
@@ -25,7 +28,7 @@ server.listen(8080, () => {
   console.log("Server running!");
 });
 
-const MONGO_URL = "";
+const MONGO_URL = process.env.DB_HOST;
 
 mongoose.Promise = Promise;
 mongoose.connect(MONGO_URL);
