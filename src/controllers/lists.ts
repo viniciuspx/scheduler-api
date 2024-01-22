@@ -20,10 +20,11 @@ export const getList = async (req: Request, res: Response) => {
 export const create = async (req: Request, res: Response) => {
   try {
     const { userId, list } = req.body;
+    console.log(req.body);
     if (!userId || !list) return res.sendStatus(400);
     const listExists = await getListById(userId);
     if (listExists) {
-      return res.sendStatus(400);
+        return res.sendStatus(400);
     }
     const newList = await createList({
       userId,
