@@ -57,7 +57,7 @@ export const update = async (req: Request, res: Response) => {
 
 export const deleteList = async (req: Request, res: Response) => {
   try {
-    const { userId } = req.body;
+    const { userId } = req.params;
     const list = await deleteUserList(userId);
     return res.status(200).json(list).end();
   } catch (error) {

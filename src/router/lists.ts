@@ -5,5 +5,5 @@ export default(router: express.Router) => {
     router.get('/list/get/:userId', getList);
     router.post('/list/create', create);
     router.patch('/list/update', update);
-    router.delete('/list/delete', deleteList)
+    router.delete('/list/delete/:userId', deleteList)
 }
